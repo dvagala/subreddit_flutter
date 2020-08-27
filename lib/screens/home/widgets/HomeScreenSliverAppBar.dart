@@ -9,7 +9,10 @@ class HomeScreenSliverAppBar extends StatelessWidget {
       floating: false,
       pinned: true,
       snap: false,
-      backgroundColor: Colors.white,
+      elevation: 14,
+      shadowColor: Color(0x40000000),
+//      backgroundColor: Colors.white,
+      backgroundColor: Color(0xfaffffff),
       flexibleSpace: FlexibleSpaceBar(
         titlePadding: EdgeInsets.fromLTRB(
           14,
@@ -23,13 +26,11 @@ class HomeScreenSliverAppBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 0, 3),
+              padding: const EdgeInsets.only(bottom: 3),
               child: Text(
                 "HOT POSTS",
                 style: TextStyle(
-                    fontSize: 8,
-                    color: Constants.LIGHT_GREY,
-                    letterSpacing: 0.5),
+                    fontSize: 8, color: Constants.MID_GREY, letterSpacing: 0.5),
               ),
             ),
             Row(
@@ -44,7 +45,7 @@ class HomeScreenSliverAppBar extends StatelessWidget {
                       color: Colors.black),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 13, 0),
+                  padding: EdgeInsets.only(right: 13),
                   child: Image(
                       height: 20,
                       image: AssetImage('assets/icons/flutter_logo.png')),

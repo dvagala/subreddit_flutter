@@ -13,17 +13,20 @@ class PostCardsSliverList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> items;
 
-    // while posts are being loaded, show only placeholders
+//     while posts are being loaded, show only placeholders
     if (this.posts == null) {
-      items = List.filled(3, PlaceholderCard());
+      items = List.filled(20, PlaceholderCard());
     } else {
       items = posts.map((post) => PostCard(post: post)).toList();
     }
 
-    return SliverList(
-      delegate: SliverChildBuilderDelegate(
-        (context, index) => items[index],
-        childCount: items.length,
+    return SliverPadding(
+      padding: EdgeInsets.only(bottom: 30),
+      sliver: SliverList(
+        delegate: SliverChildBuilderDelegate(
+          (context, index) => items[index],
+          childCount: items.length,
+        ),
       ),
     );
   }
