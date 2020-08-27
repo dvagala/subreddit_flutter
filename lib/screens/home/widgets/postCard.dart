@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:subreddit_flutter/constants.dart';
 import 'package:subreddit_flutter/models/post.dart';
 import 'package:subreddit_flutter/utils/snackBarHelper.dart';
-import 'package:subreddit_flutter/constants.dart' as Constants;
 
 class PostCard extends StatelessWidget {
   final Post post;

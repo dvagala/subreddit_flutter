@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:subreddit_flutter/constants.dart';
 import 'package:subreddit_flutter/models/post.dart';
-import 'package:subreddit_flutter/constants.dart' as Constants;
 
 class HttpService {
   static Future<List<Post>> getPosts() async {
