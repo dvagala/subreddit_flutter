@@ -9,16 +9,13 @@ class HomeScreenSliverAppBar extends StatelessWidget {
       floating: false,
       pinned: true,
       snap: false,
-      elevation: 14,
-      shadowColor: Color(0x40000000),
-//      backgroundColor: Colors.white,
+      elevation: Constants.SHADOW_ELEVATION,
+      shadowColor: Constants.SHADOW_COLOR,
       backgroundColor: Color(0xfaffffff),
       flexibleSpace: FlexibleSpaceBar(
-        titlePadding: EdgeInsets.fromLTRB(
-          14,
-          0,
-          0,
-          13,
+        titlePadding: EdgeInsets.only(
+          left: 14,
+          bottom: 13,
         ),
         title: Column(
           mainAxisSize: MainAxisSize.min,

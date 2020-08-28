@@ -16,6 +16,7 @@ class Constants {
   static const MID_GREY = Color(0xFF9a9a9a);
   static const LIGHT_GREY = Color(0xFFC7C7CC);
   static const PALE_GREY = Color(0xFFE7E7E7);
+  static const IOS_APPBAR_PALE_GREY = Color(0xfff4f4f4);
 
   static const SHADOW_ELEVATION = 14.0;
   static const SHADOW_COLOR = Color(0x40000000);
