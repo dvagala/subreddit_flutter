@@ -17,7 +17,7 @@ class HttpService {
         String content = child["data"]["selftext"];
 
         if (title == null || content == null) {
-          return Future.error(Constants.NETWORK_ERROR_MSG);
+          return Future.error(Constants.NO_INTERNET_ERROR_MSG);
         }
 
         posts.add(Post(title: title, content: content));
@@ -30,7 +30,7 @@ class HttpService {
         }
       }
     } catch (e) {
-      return Future.error(Constants.NETWORK_ERROR_MSG);
+      return Future.error(Constants.NO_INTERNET_ERROR_MSG);
     }
 
     return posts;

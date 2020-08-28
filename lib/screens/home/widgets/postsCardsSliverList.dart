@@ -13,7 +13,7 @@ class PostCardsSliverList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> items;
 
-//     while posts are being loaded, show only placeholders
+    // while posts are being loaded, show only placeholders
     if (this.posts == null) {
       items = List.filled(20, PlaceholderCard());
     } else {
