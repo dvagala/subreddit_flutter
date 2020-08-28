@@ -1,10 +1,15 @@
-library constants;
-
 import 'package:flutter/material.dart';
 
 class Constants {
-  static const String NETWORK_ERROR_MSG =
-      "Network error! Can't fetch new posts.";
+  static const String NO_INTERNET_ERROR_MSG =
+      "No internet connection, can't fetch new posts.";
+
+  static const String DATABASE_INSERT_ERROR_MSG =
+      "Database error! Posts won't be available offline.";
+
+  static const String POSTS_ARE_OFFLINE_ERROR_MSG = "Post are offline.";
+  static const String BACK_ONLINE_MSG = "We're back online.";
+
   static const int NUMBER_OF_POSTS_TO_SHOW = 20;
 
   static const String POST_DETAIL_ROUTE = "/postDetail";

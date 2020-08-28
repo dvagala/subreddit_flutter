@@ -8,9 +8,6 @@ class PostDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    final Post post = ModalRoute.of(context).settings.arguments;
-//    final Post post = Post(title: "df", content: "sfd");
-
     return Scaffold(
       body: SafeArea(
           child: SingleChildScrollView(
